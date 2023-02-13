@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.RootController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.RootLayoutController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
@@ -17,19 +17,20 @@
           <Menu mnemonicParsing="false" text="Statistics">
             <items>
                   <MenuItem mnemonicParsing="false" onAction="#handleShowInitCenter" text="Inicio" />
-                  <MenuItem mnemonicParsing="false" onAction="#handleShowArea" text="AreaChart" />
-                  <MenuItem mnemonicParsing="false" text="BarChart" />
-                  <MenuItem mnemonicParsing="false" text="Bubble Chart" />
-                  <MenuItem mnemonicParsing="false" text="Line Chart" />
-              <MenuItem mnemonicParsing="false" text="Pie Chart" />
-                  <MenuItem mnemonicParsing="false" text="Scatter Chart" />
+              <MenuItem mnemonicParsing="false" onAction="#handleShowArea" text="AreaChart" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleShowBarChart" text="BarChart" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleShowBubbleChart" text="BubleChart" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleShowLineChart" text="LineChart" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleShowCirculo" text="PieChart" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleShowScatterChart" text="ScatterChart" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
             <items>
               <MenuItem mnemonicParsing="false" text="About" />
-                  <MenuItem mnemonicParsing="false" text="Manual de Usuario - PDF" />
-                  <MenuItem mnemonicParsing="false" text="Manual de Usuario- Web" />
+              <MenuItem mnemonicParsing="false" onAction="#handleShowPDF" text="Manual de Usuario - PDF" />
+              <MenuItem mnemonicParsing="false" onAction="#handleShowBrowser" text="Manual de Usuario- Web" />
+              <MenuItem mnemonicParsing="false" onAction="#handleshowWebView" text="Manual de Usuario- WebView" />
             </items>
           </Menu>
         </menus>
